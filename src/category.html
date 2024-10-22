@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carballo - Lugares de Interés y Eventos</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Enlace al archivo CSS -->
+  <link rel="stylesheet" href="./styles/main.scss">
+</head>
+
+<body>
+  <header>
+    <h1>Historia y Cultura de Carballo</h1>
+    <p>Descubre los eventos y lugares más importantes</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="./index.html">Portada</a></li>
+      <li><a href="./category.html">Categoría</a></li>
+      <li><a href="./presentation.html">Presentación</a></li>
+      <li><a href="./links.html">Enlaces de interés</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2 class="center-text">Turismo en Carballo. ¡Qué ver y hacer!</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="imaxes/baldaio.jpg" alt="Playa de Razo-Baldaio">
+          <h3><a href="./detalle-baldaio.html">Nuestro MAR</a></h3>
+          <p>Disfruta de nuestras espectaculares playas, como la de Razo, una de las más grandes y naturales de Galicia,
+            un espacio ideal para el surf y la observación de
+            aves.</p>
+        </div>
+        <div class="card">
+          <img src="imaxes/anllons_carballo_4.jpg" alt="Paseo do río Anllóns">
+          <h3><a href="./detalle-anllons.html">Nuestros RÍOS</a></h3>
+          <p>Un hermoso recorrido que sigue el curso del río Anllóns, ofreciendo un espacio tranquilo y lleno de
+            naturaleza.</p>
+        </div>
+        <div class="card">
+          <img src="imaxes/san_xoan_1.jpg" alt="San xoan">
+          <h3><a href="./detalle-musica.html">Nuestras Fiestas </a></h3>
+          <p>Disfruta de nuestras múltiples fiestas, conciertos, de nuestra banda de música, charangas, teatro, y un
+            sinfín de eventos culturales.</p>
+        </div>
+        <div class="card">
+          <img src="imaxes/fervedas_2.jpg" alt="Entorno">
+          <h3><a href="./detalle-entorno.html">Nuestro Entorno</a></h3>
+          <p>Visita los numeros y preciosos parajes naturales con los que contamos</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Carballo na Costa da Morte</p>
+    <p>&copy; Antonio Manuel Campos Gerpe</p>
+  </footer>
+  <script>
+    // Selecciona todas las tarjetas
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', function () {
+        // Busca el enlace dentro de la tarjeta
+        const link = this.querySelector('a');
+        if (link) {
+          // Redirige al enlace
+          window.location.href = link.href;
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

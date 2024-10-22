@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carballo - Bienvenido a la Costa da Morte</title>
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Enlace al archivo CSS -->
+  <link rel="stylesheet" href="./styles/main.scss">
+</head>
+
+<body>
+  <header>
+    <h1>Descubre Carballo</h1>
+    <p>COSTA DA MORTE</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="./index.html">Portada</a></li>
+      <li><a href="./category.html">Categoría</a></li>
+      <li><a href="./presentation.html">Presentación</a></li>
+      <li><a href="./links.html">Enlaces de interés</a></li>
+    </ul>
+  </nav>
+ <main>
+  <!-- Slider Swiper -->
+  <section class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="imaxes/baldaio.jpg" alt="Playa de Razo-Baldaio">
+        <div class="slide-caption">Playa de Razo-Baldaio, un rincón paradisíaco en la Costa da Morte</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="imaxes/razo.jpg" alt="Playa de Razo">
+        <div class="slide-caption">Playa de Razo, uno de los mejores lugares para surfear</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="imaxes/Paseo-do-rio-Anllons.jpg" alt="Paseo do río Anllons">
+        <div class="slide-caption">Paseo do río Anllons, naturaleza y paz en cada rincón</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="imaxes/anoitecer-na-costa.jpg" alt="Anoitecer na Costa">
+        <div class="slide-caption">Atardeceres inolvidables en la Costa da Morte</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="imaxes/CASA-NATAL-DE-ALFREDO-BRANAS.jpg" alt="Casa natal de Alfredo Brañas">
+        <div class="slide-caption">Casa natal de Alfredo Brañas, cuna de historia y cultura</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="imaxes/PRAZA-DE-GALICIA.jpg" alt="Praza de Galicia">
+        <div class="slide-caption">Praza de Galicia, el corazón de Carballo</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="imaxes/Fervenza-de-San-Paio400px_alto.jpg" alt="Praza de Galicia">
+        <div class="slide-caption">Praza de Galicia, el corazón de Carballo</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="imaxes/san_xoan_1.jpg" alt="Praza de Galicia">
+        <div class="slide-caption">Praza de Galicia, el corazón de Carballo</div>
+      </div>
+    </div>
+
+    <!-- Paginación Swiper -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Botones de navegación -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Barra de desplazamiento -->
+    <div class="swiper-scrollbar"></div>
+  </section>
+ </main>
+
+  <footer>
+    <p>&copy; 2024 Carballo na Costa da Morte</p>
+    <p>&copy; Antonio Manuel Campos Gerpe</p>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Inicialización de Swiper -->
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+      },
+    });
+  </script>
+</body>
+</html>
