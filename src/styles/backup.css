@@ -1,0 +1,19 @@
+@keyframes colorScale {
+  0% {
+    color: #8ee61c;
+    transform: scale(1);
+  }
+  50% {
+    color: #1ce6a3;
+    transform: scale(1.1);
+  }
+  100% {
+    color: #8ee61c;
+    transform: scale(1);
+  }
+}
+
+h2 span {
+  display: inline-block;
+  animation: colorScale 2s infinite;
+}

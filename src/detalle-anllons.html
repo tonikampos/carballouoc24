@@ -1,32 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paseo do Río Anllons</title>
-
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Historia e Cultura de Carballo</title>
+    <!-- Swiper CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap"
+        rel="stylesheet" />
     <!-- Enlace al archivo CSS -->
-    <link rel="stylesheet" href="./styles/main.scss">
+    <link href="./styles/main.scss" rel="stylesheet" />
+    <style>
+        footer a:hover {
+            background-color: #e9ecef;
+            color: #0056b3;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Paseo del rio Anllons</h1>
-        <h2>La naturaleza, la tranquilidad, el agua, el río, el paseo, no te lo pierdas!</h2>
-    </header>
-
-    <nav>
-        <ul>
+    <header
+    style="display: flex; align-items: center; justify-content: center; padding: 1rem; background-color: #f8f9fa; border-bottom: 1px solid #dee2e6;">
+    <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
+      style="width: 50px; height: auto; margin-right: 1rem;" />
+      <div style="text-align: center;">
+        <h1 style="margin: 0; font-size: 1.5rem; color: #8ee61c;">COSTA DA MORTE</h1>
+        <h3 style="margin: 0; font-size: 1rem; color: #1ce6a3;">Río Anllons</h3>
+      </div>
+     <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
+      style="width: 50px; height: auto; margin-right: 1rem;" />
+  </header>
+    <nav
+        style="position: relative; display: flex; align-items: center; justify-content: space-between; padding: 0 1rem;">
+        <!-- Imagen izquierda -->
+        <img alt="Clip art izquierdo" src="imaxes/san_xoan_3.jpg" style="
+            clip-path: ellipse(50% 50% at 50% 50%);
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border: 3px solid #343a40;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            margin-right: 0.5rem;
+        " />
+        <!-- Lista de enlaces -->
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem;">
             <li><a href="./index.html">Portada</a></li>
             <li><a href="./category.html">Categoría</a></li>
             <li><a href="./presentation.html">Presentación</a></li>
             <li><a href="./links.html">Enlaces de interés</a></li>
         </ul>
+        <!-- Imagen derecha -->
+        <img alt="Clip art derecho" src="imaxes/anllons_3.jpg" style="
+            clip-path: ellipse(50% 50% at 50% 50%);
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border: 3px solid #343a40;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            margin-left: 0.5rem;
+        " />
     </nav>
 
     <main>
@@ -47,11 +84,27 @@
 
 
         <!-- Galería de imágenes con tarjetas -->
+        <!-- Galería de imágenes con tarjetas -->
         <section class="galeria-imagenes">
-            <h2>Galería de Imágenes y Vídeos</h2>
             <div class="card-container">
+                <div class="card principal">
+                    <picture>
+                        <source srcset="imaxes/anllons_carballo_4-1x.jpg" media="(max-width: 600px)">
+                        <source srcset="imaxes/anllons_carballo_4-2x.jpg" media="(min-width: 601px)">
+                        <img src="imaxes/anllons_carballo_4.jpg" alt="Cruzando el pueblo">
+                    </picture>
+                    <div class="card-description">
+                        <h3>Anllon, vegetación ante todo</h3>
+                        <p>En esta imagen vemos como el río se rodea de vegetación.</p>
+                    </div>
+                </div>
+
                 <div class="card">
-                    <img src="imaxes/Paseo-do-rio-Anllons.jpg" alt="Anllons a su paso por Carballo">
+                    <picture>
+                        <source srcset="imaxes/paseo-do-rio-anllons-small.jpg" media="(max-width: 600px)">
+                        <source srcset="imaxes/paseo-do-rio-anllons-large.jpg" media="(min-width: 601px)">
+                        <img src="imaxes/paseo-do-rio-anllons-large.jpg" alt="Anllons a su paso por Carballo">
+                    </picture>
                     <div class="card-description">
                         <h3>Anllons a su paso por Carballo</h3>
                         <p>El río atraviesa el pueblo y se disfruta de un paseo que atraviesa el pueblo paralelo al río.
@@ -59,48 +112,24 @@
                     </div>
                 </div>
 
+
+
                 <div class="card">
-                    <img src="imaxes/anllons_carballo_1.jpg" alt="Cruzando el pueblo">
+                    <picture>
+                        <source srcset="imaxes/anllons_carballo_8-small.jpg" media="(max-width: 600px)">
+                        <source srcset="imaxes/anllons_carballo_8-large.jpg" media="(min-width: 601px)">
+                        <img src="imaxes/anllons_carballo_8-large.jpg" alt="Más puentes">
+                    </picture>
                     <div class="card-description">
-                        <h3>Anllons a su salida del pueblo</h3>
-                        <p>En esta imagen vemos como el río abandona el pueblo y sigue su ruta hacia el mar.</p>
+                        <h3>Puente en una zona de árboles autóctonos</h3>
+                        <p>Imagen de otoño, con hojas caídas, árboles castaños, río al fondo y mucha vegetación.</p>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="imaxes/anllons_carballo_3.jpg" alt="Paseo y naturaleza">
-                    <div class="card-description">
-                        <h3>Ruta de senderismo que acompaña al río</h3>
-                        <p>A lo largo de aproximadamente 8 km, disfrata de la naturaleza y del río </p>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <img src="imaxes/anllons_carballo_7.jpg" alt="puente en la ruta">
-                    <div class="card-description">
-                        <h3>Puente de madera cruzando el Anllons</h3>
-                        <p>A lo largo de la ruta de senderismo, te encuentras con diversos puentes de madera sobre el
-                            río.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="imaxes/anllons_carballo_8.jpg" alt="mas puentes">
-                    <div class="card-description">
-                        <h3>Puente en una zona de arboles autoctonos carballos</h3>
-                        <p>Imagen de otoño, con ojas caídas, arboles castaños, río al fondo y mucha vegetación</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="imaxes/anllons_carballo_4.jpg" alt="Vegetación">
-                    <div class="card-description">
-                        <h3>El río visto de certa, con la vegetación</h3>
-                        <p>Disfruta de la tranquilidad que ofrece el discurrir del agua del río.</p>
-                    </div>
-                </div>
             </div>
         </section>
+
 
         <!-- Videos sobre la Playa -->
         <section class="videos-playa">
@@ -131,10 +160,38 @@
     </main>
 
 
-    <footer>
-        <p>&copy; 2024 Carballo na Costa da Morte</p>
-        <p>&copy; Antonio Manuel Campos Gerpe</p>
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="index.html">Portada</a>
+            <a href="category.html">Categoría</a>
+            <a href="presentation.html">Presentación</a>
+            <a href="links.html">Enlaces De Interés</a>
+
+        </div>
+        <div class="footer-branding">
+            <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
+            <p>© Antonio Manuel Campos Gerpe</p>
+            <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
+
+        </div>
     </footer>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+          // Seleccionar las imágenes de la barra de navegación
+          const navImages = document.querySelectorAll("nav img");
+    
+          // Asignar la clase de movimiento inicial según su posición
+          if (navImages[0]) navImages[0].classList.add("izquierda");
+          if (navImages[1]) navImages[1].classList.add("derecha");
+    
+          // Activar las animaciones con un pequeño retraso
+          navImages.forEach((img, index) => {
+            setTimeout(() => {
+              img.classList.add("img-entrar");
+            }, index * 300); // Escalonar la animación (300ms de diferencia entre imágenes)
+          });
+        });
+      </script>
 
 </body>
 

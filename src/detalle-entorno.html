@@ -15,19 +15,48 @@
 </head>
 
 <body>
-    <header>
-        <h1>Nuestro Entorno</h1>
-        <h2>Lo mires por donde lo mires, Carballo es un rincón paradisíaco en la Costa da Morte</h2>
-    </header>
-
-    <nav>
-        <ul>
+    <header
+    style="display: flex; align-items: center; justify-content: center; padding: 1rem; background-color: #f8f9fa; border-bottom: 1px solid #dee2e6;">
+    <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
+      style="width: 50px; height: auto; margin-right: 1rem;" />
+      <div style="text-align: center;">
+        <h1 style="margin: 0; font-size: 1.5rem; color: #8ee61c;">COSTA DA MORTE</h1>
+        <h3 style="margin: 0; font-size: 1rem; color: #1ce6a3;">Nuestro Entorno Natural</h3>
+      </div>
+     <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
+      style="width: 50px; height: auto; margin-right: 1rem;" />
+  </header>
+    <nav
+        style="position: relative; display: flex; align-items: center; justify-content: space-between; padding: 0 1rem;">
+        <!-- Imagen izquierda -->
+        <img alt="Clip art izquierdo" src="imaxes/san_xoan_3.jpg" style="
+              clip-path: ellipse(50% 50% at 50% 50%);
+              width: 80px;
+              height: 80px;
+              object-fit: cover;
+              border: 3px solid #343a40;
+              box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+              margin-right: 0.5rem;
+          " />
+        <!-- Lista de enlaces -->
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem;">
             <li><a href="./index.html">Portada</a></li>
             <li><a href="./category.html">Categoría</a></li>
             <li><a href="./presentation.html">Presentación</a></li>
             <li><a href="./links.html">Enlaces de interés</a></li>
         </ul>
+        <!-- Imagen derecha -->
+        <img alt="Clip art derecho" src="imaxes/anllons_3.jpg" style="
+              clip-path: ellipse(50% 50% at 50% 50%);
+              width: 80px;
+              height: 80px;
+              object-fit: cover;
+              border: 3px solid #343a40;
+              box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+              margin-left: 0.5rem;
+          " />
     </nav>
+
 
     <main>
         <section class="descripcion-playa">
@@ -49,8 +78,8 @@
         <section class="galeria-imagenes">
             <h2>Galería de Imágenes y Vídeos</h2>
             <div class="card-container">
-                <div class="card">
-                    <img src="imaxes/fervedas_1.jpg" alt="Fervenza de San paio">
+                <div class="card principal">
+                    <img src="imaxes/fervedas_2.jpg" alt="Fervenza de San paio">
                     <div class="card-description">
                         <h3>Ruta de senderismo entre las 2 fervenzas de las que disponemos</h3>
                         <p>Una ruta de senderismo de 20 km que recorre el ayuntamiento y nos muestra las dos cataratas
@@ -58,27 +87,12 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="imaxes/arboles1.jpg" alt="Arboles">
-                    <div class="card-description">
-                        <h3>Arboles y entorno rural</h3>
-                        <p>Disfruta deEl atardecer en Razo ofrece vistas espectaculares con colores vibrantes.</p>
-                    </div>
-                </div>
 
                 <div class="card">
                     <img src="imaxes/Monte-Neme-3-1024x683.jpg" alt="Monte Neme">
                     <div class="card-description">
                         <h3>Monte Neme</h3>
                         <p>La mezcla de agua con sales y minerales ha creado estas preciosas acumulaciones de agua</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="imaxes/pazoviladefrancos.jpg" alt="Pazo e viladefrancos">
-                    <div class="card-description">
-                        <h3>Pazo de Viladrefrancos</h3>
-                        <p>Carballo tambíen tiene historia, y uno de esos lugares es el pazo de viladefrancos.</p>
                     </div>
                 </div>
 
@@ -91,14 +105,7 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="imaxes/catedrales.jpg" alt="Catedrales de Carballo">
-                    <div class="card-description">
-                        <h3>Carballo tambien tiene sus catedrales particulare en la playa</h3>
-                        <p>En invierno, con fuerte marejada, dejate impresionar por estas pequeñas catedrales en el mar.
-                        </p>
-                    </div>
-                </div>
+
             </div>
         </section>
 
@@ -131,11 +138,38 @@
         </section>
     </main>
 
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="index.html">Portada</a>
+            <a href="category.html">Categoría</a>
+            <a href="presentation.html">Presentación</a>
+            <a href="links.html">Enlaces De Interés</a>
 
-    <footer>
-        <p>&copy; 2024 Carballo na Costa da Morte</p>
-        <p>&copy; Antonio Manuel Campos Gerpe</p>
+        </div>
+        <div class="footer-branding">
+            <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
+            <p>© Antonio Manuel Campos Gerpe</p>
+            <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
+
+        </div>
     </footer>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+          // Seleccionar las imágenes de la barra de navegación
+          const navImages = document.querySelectorAll("nav img");
+    
+          // Asignar la clase de movimiento inicial según su posición
+          if (navImages[0]) navImages[0].classList.add("izquierda");
+          if (navImages[1]) navImages[1].classList.add("derecha");
+    
+          // Activar las animaciones con un pequeño retraso
+          navImages.forEach((img, index) => {
+            setTimeout(() => {
+              img.classList.add("img-entrar");
+            }, index * 300); // Escalonar la animación (300ms de diferencia entre imágenes)
+          });
+        });
+      </script>
 
 </body>
 

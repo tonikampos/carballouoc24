@@ -15,37 +15,72 @@
 </head>
 
 <body>
-  <header>
-    <h1>Mira todo lo que te ofrecemos en Carballo!! </h1>
-
+  <header
+    style="display: flex; align-items: center; justify-content: center; padding: 1rem; background-color: #f8f9fa; border-bottom: 1px solid #dee2e6;">
+    <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
+      style="width: 50px; height: auto; margin-right: 1rem;" />
+    <div style="text-align: center;">
+      <h1 style="margin: 0; font-size: 1.5rem; color: #8ee61c;">COSTA DA MORTE</h1>
+      <h3 style="margin: 0; font-size: 1rem; color: #1ce6a3;">No te pierdas nada !!</h3>
+    </div>
+    <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
+      style="width: 50px; height: auto; margin-right: 1rem;" />
   </header>
-
-  <nav>
-    <ul>
+  <nav style="position: relative; display: flex; align-items: center; justify-content: space-between; padding: 0 1rem;">
+    <!-- Imagen izquierda -->
+    <img class="izquierda" alt="Clip art izquierdo" src="imaxes/san_xoan_3.jpg" style="
+            clip-path: ellipse(50% 50% at 50% 50%);
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border: 3px solid #343a40;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            margin-right: 0.5rem;
+        " />
+    <!-- Lista de enlaces -->
+    <ul id="menu" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem;">
       <li><a href="./index.html">Portada</a></li>
       <li><a href="./category.html">Categoría</a></li>
       <li><a href="./presentation.html">Presentación</a></li>
       <li><a href="./links.html">Enlaces de interés</a></li>
     </ul>
+    <!-- Imagen derecha -->
+    <img class="derecha" alt="Clip art derecho" src="imaxes/anllons_3.jpg" style="
+            clip-path: ellipse(50% 50% at 50% 50%);
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border: 3px solid #343a40;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            margin-left: 0.5rem;
+        " />
   </nav>
 
   <main>
-    <section>
+    <section class="descripcion-playa">
       <p class="center-text"> Vive el Patrimonio Natural y Cultural en Carballo.</p>
       <p class="center-text"> Abre bien los ojos ante las propuestas que te presentamos. </p>
       <p class="center-text"> Carballo y sus espacios mágicos, salvajes, protegidos.</p>
       <p class="center-text"> Nos hemos centrado preferentemente en el entorno natural que disfrutamos</p>
-      <h2 class="center-text">!Mira auna pequeña muestra de lo que te ofrecemos!</h2>
+      <h2 class="center-text">!Mira una pequeña muestra de lo que te ofrecemos!</h2>
       <div class="card-container">
         <div class="card">
-          <img src="imaxes/baldaio.jpg" alt="Playa de Razo-Baldaio">
+          <picture>
+            <source srcset="imaxes/baldaio_final_mobile.jpg" media="(max-width: 600px)">
+            <source srcset="imaxes/baldaio_final_tablet.jpg" media="(max-width: 1024px)">
+            <img src="imaxes/baldaio_final.jpg" alt="Playa de Razo-Baldaio" style="width: 100%; object-fit: cover;">
+          </picture>
           <p>Una de nuestras playas más impresionantes, inmensa, perfecta para disfrutar del mar, del surf, deportes de
             arena, windsurf,relajate paseando casi 6 km de playa con una finísima arena, contempla las diversas especies
             animales que
             habitan, y no te olvides que contamos con bandera Azul desde hace muchos años.</p>
         </div>
         <div class="card">
-          <img src="imaxes/anllons_carballo_4.jpg" alt="Paseo do río Anllóns">
+          <picture>
+            <source srcset="imaxes/anllons_carballo_4_mobile.jpg" media="(max-width: 600px)">
+            <source srcset="imaxes/anllons_carballo_4_tablet.jpg" media="(max-width: 1024px)">
+            <img src="imaxes/anllons_carballo_4.jpg" alt="Paseo do río Anllóns" style="width: 100%; object-fit: cover;">
+          </picture>
           <p>No solo de mar se vive, para los amantes del interior, tenemos el gran ríon Anllons, que cruza la comarca
             de extremo a extremo, no puedes perderte hacer la ruta de senderismo paralela al río, que durante 10 km te
             permite relajarte con
@@ -54,13 +89,21 @@
             natural.</p>
         </div>
         <div class="card">
-          <img src="imaxes/san_xoan_1.jpg" alt="San xoan">
+          <picture>
+            <source srcset="imaxes/san_xoan_1_mobile.jpg" media="(max-width: 600px)">
+            <source srcset="imaxes/san_xoan_1_tablet.jpg" media="(max-width: 1024px)">
+            <img src="imaxes/san_xoan_1.jpg" alt="San xoan" style="width: 100%; object-fit: cover;">
+          </picture>
           <p>La fiesta por excelencia en nuestra tierra, la hogera de san juan, o la Fogata de San Xoan, sea como sea,
             el fuego, la fiestar,
             la música, la alegría siempre presente en nuestra fiesta. A noite de Máxia de San Xoan</p>
         </div>
         <div class="card">
-          <img src="imaxes/fervedas_2.jpg" alt="Entorno">
+          <picture>
+            <source srcset="imaxes/fervenza_final_mobile.jpg" media="(max-width: 600px)">
+            <source srcset="imaxes/Fervenza_final_tablet.jpg" media="(max-width: 1024px)">
+            <img src="imaxes/fervenza_final.jpg" alt="Fervenza de Rus" style="width: 100%; object-fit: cover;">
+          </picture>
           <p>Lo que encontrarás en el interior de la comarca, monte, arboles, campo verde, sendas para hacer rutas,
             pequeñas cascadas interiores (fervenzas)
             un paisaje impresionante sobre todo en invierno, con abundante lluvía, el río baja muy pontente y la
@@ -68,14 +111,20 @@
             muy presente, hablamos de cascada pero en el municipio disponemos de 2 cascadas, la Ferveda de Entrecruces y
             la Ferveda de Rus</p>
         </div>
-
       </div>
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2024 Carballo na Costa da Morte</p>
-    <p>&copy; Antonio Manuel Campos Gerpe</p>
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html">Portada</a>
+      <a href="category.html">Categoría</a>
+      <a href="presentation.html">Presentación</a>
+      <a href="links.html">Enlaces De Interés</a>
+    </div>
+    <div class="footer-branding">
+      <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
+      <p>© Antonio Manuel Campos Gerpe</p>
+    </div>
   </footer>
   <script>
     // Selecciona todas las tarjetas
@@ -87,6 +136,37 @@
           // Redirige al enlace
           window.location.href = link.href;
         }
+      });
+    });
+  </script>
+  <script>
+    // Obtener el nombre del archivo actual
+    const currentUrl = window.location.pathname.split('/').pop() || 'presentation.html';
+
+    // Seleccionar todos los enlaces del menú
+    const menuLinks = document.querySelectorAll('#menu a');
+
+    // Recorrer los enlaces y añadir la clase 'activo' al enlace que coincida con la URL actual
+    menuLinks.forEach(link => {
+      if (link.getAttribute('href').includes(currentUrl)) {
+        link.classList.add('activo');
+      }
+    });
+  </script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      // Seleccionar las imágenes de la barra de navegación
+      const navImages = document.querySelectorAll("nav img");
+
+      // Asignar la clase de movimiento inicial según su posición
+      if (navImages[0]) navImages[0].classList.add("izquierda");
+      if (navImages[1]) navImages[1].classList.add("derecha");
+
+      // Activar las animaciones con un pequeño retraso
+      navImages.forEach((img, index) => {
+        setTimeout(() => {
+          img.classList.add("img-entrar");
+        }, index * 300); // Escalonar la animación (300ms de diferencia entre imágenes)
       });
     });
   </script>

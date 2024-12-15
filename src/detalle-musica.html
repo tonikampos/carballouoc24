@@ -15,19 +15,48 @@
 </head>
 
 <body>
-    <header>
-        <h1>Nuestras fiestas para el mundo</h1>
-        <h2>Carballo, si buscas fiesta, este es tu sitio</h2>
-    </header>
-
-    <nav>
-        <ul>
+    <header
+    style="display: flex; align-items: center; justify-content: center; padding: 1rem; background-color: #f8f9fa; border-bottom: 1px solid #dee2e6;">
+    <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
+      style="width: 50px; height: auto; margin-right: 1rem;" />
+      <div style="text-align: center;">
+        <h1 style="margin: 0; font-size: 1.5rem; color: #8ee61c;">COSTA DA MORTE</h1>
+        <h3 style="margin: 0; font-size: 1rem; color: #1ce6a3;">Nuestra cultura</h3>
+      </div>
+     <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
+      style="width: 50px; height: auto; margin-right: 1rem;" />
+  </header>
+    <nav
+        style="position: relative; display: flex; align-items: center; justify-content: space-between; padding: 0 1rem;">
+        <!-- Imagen izquierda -->
+        <img alt="Clip art izquierdo" src="imaxes/san_xoan_3.jpg" style="
+              clip-path: ellipse(50% 50% at 50% 50%);
+              width: 80px;
+              height: 80px;
+              object-fit: cover;
+              border: 3px solid #343a40;
+              box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+              margin-right: 0.5rem;
+          " />
+        <!-- Lista de enlaces -->
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem;">
             <li><a href="./index.html">Portada</a></li>
             <li><a href="./category.html">Categoría</a></li>
             <li><a href="./presentation.html">Presentación</a></li>
             <li><a href="./links.html">Enlaces de interés</a></li>
         </ul>
+        <!-- Imagen derecha -->
+        <img alt="Clip art derecho" src="imaxes/anllons_3.jpg" style="
+              clip-path: ellipse(50% 50% at 50% 50%);
+              width: 80px;
+              height: 80px;
+              object-fit: cover;
+              border: 3px solid #343a40;
+              box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+              margin-left: 0.5rem;
+          " />
     </nav>
+
 
     <main>
         <section class="descripcion-playa">
@@ -52,12 +81,11 @@
 
         <!-- Galería de imágenes con tarjetas -->
         <section class="galeria-imagenes">
-            <h2>Galería de Imágenes y Vídeos</h2>
             <div class="card-container">
-                <div class="card">
-                    <img src="imaxes/san_xoan_2.jpg" alt="Queimando a cachela">
+                <div class="card principal">
+                    <img src="imaxes/san_xoan_1.jpg" alt="Queimando a cachela">
                     <div class="card-description">
-                        <h3>Fieta de San Xoan</h3>
+                        <h3>Fiesta de San Xoan</h3>
                         <p>Fogata espectacular que se quema en la noche de San Xoan, acompañada de música, sardinas y
                             bebida.</p>
                     </div>
@@ -79,30 +107,9 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="imaxes/CARTEL-ROCKIN-CARBALLO-2024.jpg" alt="Festival en Carballo">
-                    <div class="card-description">
-                        <h3>Rock in Carballo</h3>
-                        <p>Todo un festival referente para el entorno, con grandes grupos de todo tipo de música.</p>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <img src="imaxes/ambiente.jpg" alt="ambiente de bares">
-                    <div class="card-description">
-                        <h3>La movida en Carballo</h3>
-                        <p>Disfruta de nuestra calle de pubs, así como de nuestra zona de copas.</p>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <img src="imaxes/feira-de-carballo-1024px.jpg" alt="Feria en Carballo">
-                    <div class="card-description">
-                        <h3>Feria de productos locales en Carballo</h3>
-                        <p>Todos los jueves y los domingos, vente a la feria a comprar los productos del comercio local.
-                        </p>
-                    </div>
-                </div>
+
             </div>
         </section>
 
@@ -137,10 +144,38 @@
     </main>
 
 
-    <footer>
-        <p>&copy; 2024 Carballo na Costa da Morte</p>
-        <p>&copy; Antonio Manuel Campos Gerpe</p>
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="index.html">Portada</a>
+            <a href="category.html">Categoría</a>
+            <a href="presentation.html">Presentación</a>
+            <a href="links.html">Enlaces De Interés</a>
+
+        </div>
+        <div class="footer-branding">
+            <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
+            <p>© Antonio Manuel Campos Gerpe</p>
+            <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
+
+        </div>
     </footer>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+          // Seleccionar las imágenes de la barra de navegación
+          const navImages = document.querySelectorAll("nav img");
+    
+          // Asignar la clase de movimiento inicial según su posición
+          if (navImages[0]) navImages[0].classList.add("izquierda");
+          if (navImages[1]) navImages[1].classList.add("derecha");
+    
+          // Activar las animaciones con un pequeño retraso
+          navImages.forEach((img, index) => {
+            setTimeout(() => {
+              img.classList.add("img-entrar");
+            }, index * 300); // Escalonar la animación (300ms de diferencia entre imágenes)
+          });
+        });
+      </script>
 
 </body>
 

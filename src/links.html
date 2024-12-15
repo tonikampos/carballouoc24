@@ -2,65 +2,137 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enlaces</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Enlace al archivo CSS -->
-    <link rel="stylesheet" href="./styles/main.scss">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enlaces</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- Enlace al archivo CSS -->
+  <link rel="stylesheet" href="./styles/main.scss">
 </head>
 
 <body>
-    <header>
-        <h1>Enlaces de Interés</h1>
-    </header>
+  <header
+  style="display: flex; align-items: center; justify-content: center; padding: 1rem; background-color: #f8f9fa; border-bottom: 1px solid #dee2e6;">
+  <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
+    style="width: 50px; height: auto; margin-right: 1rem;" />
+    <div style="text-align: center;">
+      <h1 style="margin: 0; font-size: 1.5rem; color: #8ee61c;">COSTA DA MORTE</h1>
+      <h3 style="margin: 0; font-size: 1rem; color: #1ce6a3;">Enlaces de Interés</h3>
+    </div>
+   <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
+    style="width: 50px; height: auto; margin-right: 1rem;" />
+</header>
 
-    <nav>
-        <ul>
-            <li><a href="./index.html">Portada</a></li>
-            <li><a href="./category.html">Categoría</a></li>
-            <li><a href="./presentation.html">Presentación</a></li>
-            <li><a href="./links.html">Enlaces de interés</a></li>
-        </ul>
-    </nav>
-
-    <main>
-
-        <section class="descripcion-playa">
-            <h2>Enlaces de Interés</h2>
-            <p class="descripcion-texto"> <strong>Carballo es mi pueblo</strong> y adelanto que la totalidad, o
-                practicamente la totalidad de las imágenes y vídeos que se han usado en el diseño de este sitio.</p>
-            <p class="descripcion-texto">Son propias, básicamente, foto y videos que he ido gravando a lo largo de estos
-                años.</p>
-            <p class="descripcion-texto">La información y datos que he mostrado sobre mi pueblo también son de cosecha
-                propia, en la mayor parte del proceso.</p>
-        </section>
-
-        <section class="descripcion-playa">
-            <h2>Detalle de algún enlace que se ha utilizado para obtener información a mayores</h2>
-            <p class="descripcion-texto"> <a href="https://www.turismo.gal/inicio"> Turismo de galicia</a></p>
-            <p class="descripcion-texto"> <a href="http://carballo.gal/portada.php"> Concello de Carballo</a></p>
-            <p class="descripcion-texto"> <a href="https://www.sendanova.org/"> Asociacion Ambiental Senda Nova</a></p>
-            <p class="descripcion-texto"> <a href="http://www.turismocarballo.com/info.php?id=86&idioma=gl&sec=12">
-                    Turismo Carballo</a></p>
-
-
-        </section>
+  <nav style="position: relative; display: flex; align-items: center; justify-content: space-between; padding: 0 1rem;">
+    <!-- Imagen izquierda -->
+    <img class="izquierda" alt="Clip art izquierdo" src="imaxes/san_xoan_3.jpg" style="
+              clip-path: ellipse(50% 50% at 50% 50%);
+              width: 80px;
+              height: 80px;
+              object-fit: cover;
+              border: 3px solid #343a40;
+              box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+              margin-right: 0.5rem;
+          " />
+    <!-- Lista de enlaces -->
+    <ul id="menu" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem;">
+      <li><a href="./index.html">Portada</a></li>
+      <li><a href="./category.html">Categoría</a></li>
+      <li><a href="./presentation.html">Presentación</a></li>
+      <li><a href="./links.html">Enlaces de interés</a></li>
+    </ul>
+    <!-- Imagen derecha -->
+    <img class="derecha" alt="Clip art derecho" src="imaxes/anllons_3.jpg" style="
+              clip-path: ellipse(50% 50% at 50% 50%);
+              width: 80px;
+              height: 80px;
+              object-fit: cover;
+              border: 3px solid #343a40;
+              box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+              margin-left: 0.5rem;
+          " />
+  </nav>
 
 
+  <main>
 
-    </main>
+    <section class="descripcion-playa">
+      <h2><span>Enlaces de Interés</span></h2>
+      <p class="descripcion-texto"> <strong>Carballo es mi pueblo</strong> y adelanto que la totalidad, o
+        practicamente la totalidad de las imágenes y vídeos que se han usado en el diseño de este sitio.</p>
+      <p class="descripcion-texto">Son propias, básicamente, foto y videos que he ido gravando a lo largo de estos
+        años.</p>
+      <p class="descripcion-texto">La información y datos que he mostrado sobre mi pueblo también son de cosecha
+        propia, en la mayor parte del proceso.</p>
+    </section>
+
+    <section class="descripcion-playa">
+      <h2><span>Detalle de algún enlace que se ha utilizado para obtener información a mayores</span></h2>
+      <p class="descripcion-texto"> <a href="https://www.turismo.gal/inicio"> Turismo de galicia</a></p>
+      <p class="descripcion-texto"> <a href="http://carballo.gal/portada.php"> Concello de Carballo</a></p>
+      <p class="descripcion-texto"> <a href="https://www.sendanova.org/"> Asociacion Ambiental Senda Nova</a></p>
+      <p class="descripcion-texto"> <a href="http://www.turismocarballo.com/info.php?id=86&idioma=gl&sec=12">
+          Turismo Carballo</a></p>
 
 
-    <footer>
-        <p>&copy; 2024 Carballo na Costa da Morte</p>
-        <p>&copy; Antonio Manuel Campos Gerpe</p>
-    </footer>
+    </section>
 
-</body>
+
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html">Portada</a>
+      <a href="category.html">Categoría</a>
+      <a href="presentation.html">Presentación</a>
+      <a href="links.html">Enlaces De Interés</a>
+
+    </div>
+    <div class="footer-branding">
+      <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
+      <p>© Antonio Manuel Campos Gerpe</p>
+      <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
+
+    </div>
+  </footer>
+
+
+
+  <script>
+    // Obtener el nombre del archivo actual
+    const currentUrl = window.location.pathname.split('/').pop() || 'links.html';
+
+    // Seleccionar todos los enlaces del menú
+    const menuLinks = document.querySelectorAll('#menu a');
+
+    // Recorrer los enlaces y añadir la clase 'activo' al enlace que coincida con la URL actual
+    menuLinks.forEach(link => {
+      if (link.getAttribute('href').includes(currentUrl)) {
+        link.classList.add('activo');
+      }
+    });
+  </script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      // Seleccionar las imágenes de la barra de navegación
+      const navImages = document.querySelectorAll("nav img");
+
+      // Asignar la clase de movimiento inicial según su posición
+      if (navImages[0]) navImages[0].classList.add("izquierda");
+      if (navImages[1]) navImages[1].classList.add("derecha");
+
+      // Activar las animaciones con un pequeño retraso
+      navImages.forEach((img, index) => {
+        setTimeout(() => {
+          img.classList.add("img-entrar");
+        }, index * 300); // Escalonar la animación (300ms de diferencia entre imágenes)
+      });
+    });
+  </script>
+  </body>
 
 </html>
