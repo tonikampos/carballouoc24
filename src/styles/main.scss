@@ -824,3 +824,22 @@ h2 span {
   display: inline-block;
   animation: colorScale 2s infinite;
 }
+
+
+/* novos estilos*/
+
+/* Solución para enlaces activos en el menú */
+a.activo {
+  color: #003366; /* Azul oscuro */
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Solución para títulos con span */
+h2 span {
+  color: #2c2c2c; /* Gris oscuro */
+}
+
+/* Solución para texto fuerte dentro de descripciones */
+p.descripcion-texto strong {
+  color: #000000; /* Texto negro */
+}
