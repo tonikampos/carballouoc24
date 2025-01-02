@@ -6,12 +6,27 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Carballo - Capital da Costa da Morte</title>
-  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap"
-    rel="stylesheet" />
-  <link href="./styles/main.scss" rel="stylesheet" />
+
+  <!-- Precarga de estilos y fuentes críticas -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" as="style">
+
+  <!-- Estilos críticos en línea -->
   <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #dee2e6;
+    }
     footer a:hover {
       background-color: #e9ecef;
       color: #0056b3;
@@ -19,11 +34,22 @@
     }
   </style>
 
+  <!-- Carga diferida del CSS de Swiper -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+  <!-- Carga diferida de fuentes -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" media="print" onload="this.media='all'">
+
+  <link href="./styles/main.scss" rel="stylesheet" />
+
+  <!-- Precarga de imágenes críticas -->
+  <link rel="preload" href="imaxes/baldaio_final.avif" as="image">
+  <link rel="preload" href="imaxes/Rio_Anllons_final.avif" as="image">
+
 </head>
 
 <body>
-  <header
-    style="display: flex; align-items: center; justify-content: center; padding: 1rem; background-color: #f8f9fa; border-bottom: 1px solid #dee2e6;">
+  <header>
     <img loading="lazy" alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" style="width: 50px; height: auto; margin-right: 1rem;" />
     <div style="text-align: center;">
       <h1 style="margin: 0; font-size: 1.5rem; color: #8ee61c;">COSTA DA MORTE</h1>
@@ -31,68 +57,49 @@
     </div>
     <img loading="lazy" alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" style="width: 50px; height: auto; margin-right: 1rem;" />
   </header>
-  <nav style="position: relative; display: flex; align-items: center; justify-content: space-between; padding: 0 1rem;">
-    <img loading="lazy" class="izquierda" alt="Clip art izquierdo" src="imaxes/san_xoan_3.jpg" style="
-          clip-path: ellipse(50% 50% at 50% 50%);
-          width: 80px;
-          height: 80px;
-          object-fit: cover;
-          border: 3px solid #343a40;
-          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-          margin-right: 0.5rem;
-      " />
-    <!-- Lista de enlaces -->
-    <ul id="menu" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem;">
-      <li><a href="./index.html">Portada</a></li>
-      <li><a href="./category.html">Categoría</a></li>
-      <li><a href="./presentation.html">Presentación</a></li>
-      <li><a href="./links.html">Enlaces de interés</a></li>
-    </ul>
-    <!-- Imagen derecha -->
-    <img loading="lazy" class="derecha" alt="Clip art derecho" src="imaxes/anllons_3.jpg" style="
-          clip-path: ellipse(50% 50% at 50% 50%);
-          width: 80px;
-          height: 80px;
-          object-fit: cover;
-          border: 3px solid #343a40;
-          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-          margin-left: 0.5rem;
-      " />
-  </nav>
 
   <main>
     <!-- Slider Swiper -->
-
     <section class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img loading="lazy" alt="Playa de Razo-Baldaio" src="imaxes/baldaio_final.jpg"
-            srcset="imaxes/baldaio_final_pequena.jpg 480w, imaxes/baldaio_final_mediana.jpg 1024w, imaxes/baldaio_final_grande.jpg 1600w"
-            sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1600px" loading="lazy">
+          <picture>
+            <source srcset="imaxes/baldaio_final.avif" type="image/avif">
+            <source srcset="imaxes/baldaio_final.webp" type="image/webp">
+            <img src="imaxes/baldaio_final.jpg" alt="Playa de Razo-Baldaio" sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1600px">
+          </picture>
           <div class="slide-caption">Playa de Razo-Baldaio, un rincón paradisíaco en la Costa da Morte</div>
         </div>
         <div class="swiper-slide">
-          <img loading="lazy" alt="Paseo do río Anllons" src="imaxes/Rio_Anllons_final.jpg"
-            srcset="imaxes/Rio_Anllons_final_pequena.jpg 480w, imaxes/Rio_Anllons_final_mediana.jpg  1024w, imaxes/Rio_Anllons_final_grande.jpg  1600w"
-            sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1600px" loading="lazy">
+          <picture>
+            <source srcset="imaxes/Rio_Anllons_final.avif" type="image/avif">
+            <source srcset="imaxes/Rio_Anllons_final.webp" type="image/webp">
+            <img src="imaxes/Rio_Anllons_final.jpg" alt="Paseo do río Anllons" sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1600px">
+          </picture>
           <div class="slide-caption">Paseo do río Anllons, naturaleza y paz en cada rincón</div>
         </div>
         <div class="swiper-slide">
-          <img loading="lazy" alt="Anoitecer na Costa" src="imaxes/anoitecer_na_costa.jpg"
-            srcset="imaxes/anoitecer_na_costa_pequena.jpg 480w, imaxes/anoitecer_na_costa_mediana.jpg 1024w, imaxes/anoitecer_na_costa_grande.jpg 1600w"
-            sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1600px" loading="lazy">
+          <picture>
+            <source srcset="imaxes/anoitecer_na_costa.avif" type="image/avif">
+            <source srcset="imaxes/anoitecer_na_costa.webp" type="image/webp">
+            <img src="imaxes/anoitecer_na_costa.jpg" alt="Anoitecer na Costa" sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1600px">
+          </picture>
           <div class="slide-caption">Atardeceres inolvidables en la Costa da Morte</div>
         </div>
-         <div class="swiper-slide">
-          <img loading="lazy" alt="Praza de Galicia" src="imaxes/ponte_final.jpg"
-            srcset="imaxes/ponte_final_pequena.jpg 480w, imaxes/ponte_final_mediana.jpg 1024w, imaxes/ponte_final_grande.jpg 1600w"
-            sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1600px" loading="lazy">
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="imaxes/ponte_final.avif" type="image/avif">
+            <source srcset="imaxes/ponte_final.webp" type="image/webp">
+            <img src="imaxes/ponte_final.jpg" alt="Praza de Galicia" sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1600px">
+          </picture>
           <div class="slide-caption">Puente sobre el río Anllons</div>
         </div>
         <div class="swiper-slide">
-          <img loading="lazy" alt="Fervenza de San Paio" src="imaxes/fervenza_final.jpg"
-            srcset="imaxes/fervenza_final_pequena.jpg 480w, imaxes/fervenza_final_mediana.jpg 1024w, imaxes/fervenza_final_grande.jpg 1600w"
-            sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1600px" loading="lazy">
+          <picture>
+            <source srcset="imaxes/fervenza_final.avif" type="image/avif">
+            <source srcset="imaxes/fervenza_final.webp" type="image/webp">
+            <img src="imaxes/fervenza_final.jpg" alt="Fervenza de San Paio" sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1600px">
+          </picture>
           <div class="slide-caption">Fervenza en la parroquia de Rus</div>
         </div>
       </div>
@@ -103,79 +110,48 @@
       <div class="swiper-button-prev"></div>
       <!-- Barra de desplazamiento -->
       <div class="swiper-scrollbar"></div>
-      <p class="visually-hidden">Utiliza los botones de siguiente y anterior para navegar por la galería.</p>
+      <p class="visualmente-oculto">Utiliza los botones de siguiente y anterior para navegar por la galería.</p>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="footer-links">
       <a href="index.html">Portada</a>
       <a href="category.html">Categoría</a>
       <a href="presentation.html">Presentación</a>
       <a href="links.html">Enlaces De Interés</a>
-
     </div>
     <div class="footer-branding">
       <img loading="lazy" alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
       <p>© Antonio Manuel Campos Gerpe</p>
       <img loading="lazy" alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
-
     </div>
   </footer>
-  <!-- Swiper JS -->
+
+  <!-- Swiper JS cargado de manera diferida -->
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Inicialización de Swiper -->
+
+  <!-- Inicialización de Swiper diferida -->
   <script>
-    const swiper = new Swiper('.mySwiper', {
-      effect: 'fade',
-      loop: true,
-      autoplay: {
-        delay: 3000,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-      },
-    });
-  </script>
-  <script>
-    // Obtener el nombre del archivo actual
-    const currentUrl = window.location.pathname.split('/').pop() || 'index.html';
-
-    // Seleccionar todos los enlaces del menú
-    const menuLinks = document.querySelectorAll('#menu a');
-
-    // Recorrer los enlaces y añadir la clase 'activo' al enlace que coincida con la URL actual
-    menuLinks.forEach(link => {
-      if (link.getAttribute('href').includes(currentUrl)) {
-        link.classList.add('activo');
-      }
-    });
-  </script>
-
-  <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      // Seleccionar las imágenes de la barra de navegación
-      const navImages = document.querySelectorAll("nav img");
-
-      // Asignar la clase de movimiento inicial según su posición
-      if (navImages[0]) navImages[0].classList.add("izquierda");
-      if (navImages[1]) navImages[1].classList.add("derecha");
-
-      // Activar las animaciones con un pequeño retraso
-      navImages.forEach((img, index) => {
-        setTimeout(() => {
-          img.classList.add("img-entrar");
-        }, index * 300); // Escalonar la animación (300ms de diferencia entre imágenes)
+    window.addEventListener('load', () => {
+      const swiper = new Swiper('.mySwiper', {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
       });
     });
   </script>
 
+</body>
+
 </html>
+
