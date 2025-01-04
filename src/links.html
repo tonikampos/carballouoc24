@@ -28,16 +28,11 @@
 
   <nav style="position: relative; display: flex; align-items: center; justify-content: space-between; padding: 0 1rem;">
     <!-- Imagen izquierda -->
-    <img loading="lazy" class="izquierda" alt="Clip art izquierdo" src="imaxes/san_xoan_3.jpg" style="
-              clip-path: ellipse(50% 50% at 50% 50%);
-              width: 80px;
-              height: 80px;
-              object-fit: cover;
-              border: 3px solid #343a40;
-              box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-              margin-right: 0.5rem;
-          " />
-    <!-- Lista de enlaces -->
+    <picture>
+      <source srcset="imaxes/san_xoan_3.webp" type="image/webp">
+      <source srcset="imaxes/san_xoan_3.avif" type="image/avif">
+      <img class="izquierda" alt="Clip art izquierdo" src="imaxes/san_xoan_3.jpg" style="clip-path: ellipse(50% 50% at 50% 50%); width: 80px; height: 80px; object-fit: cover; border: 3px solid #343a40; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); margin-right: 0.5rem;">
+    </picture>
     <ul id="menu" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem;">
       <li><a href="./index.html">Portada</a></li>
       <li><a href="./category.html">Categoría</a></li>
@@ -45,15 +40,11 @@
       <li><a href="./links.html">Enlaces de interés</a></li>
     </ul>
     <!-- Imagen derecha -->
-    <img loading="lazy" class="derecha" alt="Clip art derecho" src="imaxes/anllons_3.jpg" style="
-              clip-path: ellipse(50% 50% at 50% 50%);
-              width: 80px;
-              height: 80px;
-              object-fit: cover;
-              border: 3px solid #343a40;
-              box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-              margin-left: 0.5rem;
-          " />
+    <picture>
+      <source srcset="imaxes/anllons_3.webp" type="image/webp">
+      <source srcset="imaxes/anllons_3.avif" type="image/avif">
+      <img class="derecha" alt="Clip art derecho" src="imaxes/anllons_3.jpg" style="clip-path: ellipse(50% 50% at 50% 50%); width: 80px; height: 80px; object-fit: cover; border: 3px solid #343a40; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); margin-left: 0.5rem;">
+    </picture>
   </nav>
 
 
