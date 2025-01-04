@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Historia e Cultura de Carballo</title>
-  <!-- Swiper CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap"
-    rel="stylesheet" />
-  <!-- Enlace al archivo CSS -->
-  <link href="./styles/main.scss" rel="stylesheet" />
-  <style>
+<html lang="es">
+<head><link as_="image" href="imaxes/san_xoan_final.jpg" rel="preload"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Historia e Cultura de Carballo</title>
+<!-- Swiper CSS -->
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Enlace al archivo CSS -->
+<link href="./styles/main.scss" rel="stylesheet"/>
+<style>
     footer a:hover {
       background-color: #e9ecef;
       color: #0056b3;
@@ -21,22 +19,18 @@
     }
   </style>
 </head>
-
 <body>
-  <header
-  style="display: flex; align-items: center; justify-content: center; padding: 1rem; background-color: #f8f9fa; border-bottom: 1px solid #dee2e6;">
-  <img loading="lazy" alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
-    style="width: 50px; height: auto; margin-right: 1rem;" />
-    <div style="text-align: center;">
-      <h1 style="margin: 0; font-size: 1.5rem; color: #8ee61c;">COSTA DA MORTE</h1>
-      <h3 style="margin: 0; font-size: 1rem; color: #1ce6a3;">Historia y Cultura de Carballo</h3>
-    </div>
-   <img loading="lazy" alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
-    style="width: 50px; height: auto; margin-right: 1rem;" />
+<header style="display: flex; align-items: center; justify-content: center; padding: 1rem; background-color: #f8f9fa; border-bottom: 1px solid #dee2e6;">
+<img alt="Logotipo de Carballo" loading="lazy" src="imaxes/logotipo_carballo.svg" style="width: 50px; height: auto; margin-right: 1rem;"/>
+<div style="text-align: center;">
+<h1 style="margin: 0; font-size: 1.5rem; color: #8ee61c;">COSTA DA MORTE</h1>
+<h3 style="margin: 0; font-size: 1rem; color: #1ce6a3;">Historia y Cultura de Carballo</h3>
+</div>
+<img alt="Logotipo de Carballo" loading="lazy" src="imaxes/logotipo_carballo.svg" style="width: 50px; height: auto; margin-right: 1rem;"/>
 </header>
- <nav style="position: relative; display: flex; align-items: center; justify-content: space-between; padding: 0 1rem;">
-    <!-- Imagen izquierda -->
-    <img loading="lazy" class="izquierda" alt="Clip art izquierdo" src="imaxes/san_xoan_3.jpg" style="
+<nav style="position: relative; display: flex; align-items: center; justify-content: space-between; padding: 0 1rem;">
+<!-- Imagen izquierda -->
+<img alt="Clip art izquierdo" class="izquierda" loading="lazy" src="imaxes/san_xoan_3.jpg" style="
           clip-path: ellipse(50% 50% at 50% 50%);
           width: 80px;
           height: 80px;
@@ -44,16 +38,16 @@
           border: 3px solid #343a40;
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
           margin-right: 0.5rem;
-      " />
-    <!-- Lista de enlaces -->
-    <ul id="menu" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem;">
-      <li><a href="./index.html">Portada</a></li>
-      <li><a href="./category.html">Categoría</a></li>
-      <li><a href="./presentation.html">Presentación</a></li>
-      <li><a href="./links.html">Enlaces de interés</a></li>
-    </ul>
-    <!-- Imagen derecha -->
-    <img loading="lazy" class="derecha" alt="Clip art derecho" src="imaxes/anllons_3.jpg" style="
+      "/>
+<!-- Lista de enlaces -->
+<ul id="menu" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem;">
+<li><a href="./index.html">Portada</a></li>
+<li><a href="./category.html">Categoría</a></li>
+<li><a href="./presentation.html">Presentación</a></li>
+<li><a href="./links.html">Enlaces de interés</a></li>
+</ul>
+<!-- Imagen derecha -->
+<img alt="Clip art derecho" class="derecha" loading="lazy" src="imaxes/anllons_3.jpg" style="
           clip-path: ellipse(50% 50% at 50% 50%);
           width: 80px;
           height: 80px;
@@ -61,82 +55,79 @@
           border: 3px solid #343a40;
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
           margin-left: 0.5rem;
-      " />
-  </nav>
-  <main>
-    <section>
-      <h2 class="center-text">Turismo en Carballo. ¡Qué ver y hacer!</h2>
-      <div class="card-container">
-        <div class="card">
-          <img loading="lazy" 
-            src="imaxes/anoitecer_na_costa.jpg" 
-            srcset="
-              imaxes/anoitecer_na_costa_1x.jpg 1x, 
-              imaxes/anoitecer_na_costa_2x.jpg 2x, 
-              imaxes/anoitecer_na_costa_3x.jpg 3x" 
-            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
-            alt="Playa de Razo-Baldaio">
-          <h3><a href="./detalle-baldaio.html">Nuestro MAR</a></h3>
-          <p>Disfruta de nuestras espectaculares playas, como la de Razo, una de las más grandes y naturales de Galicia,
-            un espacio ideal para el surf y la observación de aves.</p>
-        </div>
-        <div class="card">
-          <img loading="lazy" 
-          src="imaxes/Rio_Anllons_final.jpg" 
-          srcset="
-            imaxes/Rio_Anllons_final_1x.jpg 1x, 
-            imaxes/Rio_Anllons_final_2x.jpg 2x, 
-            imaxes/Rio_Anllons_final_3x.jpg 3x" 
-          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
-            alt="Paseo do río Anllóns">
-          <h3><a href="./detalle-anllons.html">Nuestros RÍOS</a></h3>
-          <p>Un hermoso recorrido que sigue el curso del río Anllóns, ofreciendo un espacio tranquilo y lleno de
-            naturaleza.</p>
-        </div>
-        <div class="card">
-          <img loading="lazy" 
-          src="imaxes/san_xoan_final.jpg" 
-          srcset="
-            imaxes/san_xoan_final_1x.jpg 1x, 
-            imaxes/san_xoan_final_2x.jpg 2x, 
-            imaxes/san_xoan_final_3x.jpg 3x" 
-          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
-            alt="Fiesta de San xoan">
-          <h3><a href="./detalle-musica.html">Nuestras Fiestas </a></h3>
-          <p>Disfruta de nuestras múltiples fiestas, conciertos, de nuestra banda de música, charangas, teatro, y un
-            sinfín de eventos culturales.</p>
-        </div>
-        <div class="card">
-          <img loading="lazy" 
-          src="imaxes/fervenza_final.jpg" 
-          srcset="
-            imaxes/fervenza_final_1x.jpg 1x, 
-            imaxes/fervenza_final_2x.jpg 2x, 
-            imaxes/fervenza_final_3x.jpg 3x" 
-          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
-            alt="Entorno Natural">
-          <h3><a href="./detalle-entorno.html">Nuestro Entorno</a></h3>
-          <p>Visita los numerosos y preciosos parajes naturales con los que contamos.</p>
-        </div>
-      </div>
-    </section>
+      "/>
+</nav>
+<main>
+  <section>
+  <h2 class="center-text">Turismo en Carballo. ¡Qué ver y hacer!</h2>
+  <div class="card-container">
+  <div class="card">
+  <img alt="Playa de Razo-Baldaio" sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" src="imaxes/anoitecer_na_costa.jpg" srcset="
+                imaxes/anoitecer_na_costa_1x.jpg 1x, 
+                imaxes/anoitecer_na_costa_2x.jpg 2x, 
+                imaxes/anoitecer_na_costa_3x.jpg 3x"/>
+  <h3><a href="./detalle-baldaio.html">Nuestro MAR</a></h3>
+  <p>Disfruta de nuestras espectaculares playas, como la de Razo, una de las más grandes y naturales de Galicia,
+              un espacio ideal para el surf y la observación de aves.</p>
+  </div>
+  <div class="card">
+  <img alt="Paseo do río Anllóns" sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" src="imaxes/Rio_Anllons_final.jpg" srcset="
+              imaxes/Rio_Anllons_final_1x.jpg 1x, 
+              imaxes/Rio_Anllons_final_2x.jpg 2x, 
+              imaxes/Rio_Anllons_final_3x.jpg 3x"/>
+  <h3><a href="./detalle-anllons.html">Nuestros RÍOS</a></h3>
+  <p>Un hermoso recorrido que sigue el curso del río Anllóns, ofreciendo un espacio tranquilo y lleno de
+              naturaleza.</p>
+  </div>
+  <div class="card">
+  <img alt="Fiesta de San xoan" sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" src="imaxes/san_xoan_final.jpg" srcset="
+              imaxes/san_xoan_final_1x.jpg 1x, 
+              imaxes/san_xoan_final_2x.jpg 2x, 
+              imaxes/san_xoan_final_3x.jpg 3x"/>
+  <h3><a href="./detalle-musica.html">Nuestras Fiestas </a></h3>
+  <p>Disfruta de nuestras múltiples fiestas, conciertos, de nuestra banda de música, charangas, teatro, y un
+              sinfín de eventos culturales.</p>
+  </div>
+  <div class="card">
+  <img alt="Entorno Natural" sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" src="imaxes/fervenza_final.jpg" srcset="
+              imaxes/fervenza_final_1x.jpg 1x, 
+              imaxes/fervenza_final_2x.jpg 2x, 
+              imaxes/fervenza_final_3x.jpg 3x"/>
+  <h3><a href="./detalle-entorno.html">Nuestro Entorno</a></h3>
+  <p>Visita los numerosos y preciosos parajes naturales con los que contamos.</p>
+  </div>
+  </div>
+  </section>
   </main>
   <footer class="site-footer">
-    <div class="footer-links">
-      <a href="index.html">Portada</a>
-      <a href="category.html">Categoría</a>
-      <a href="presentation.html">Presentación</a>
-      <a href="links.html">Enlaces De Interés</a>
-
-    </div>
-    <div class="footer-branding">
-      <img loading="lazy" alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
-      <p>© Antonio Manuel Campos Gerpe</p>
-      <img loading="lazy" alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
-
-    </div>
+  <div class="footer-links">
+  <a href="index.html">Portada</a>
+  <a href="category.html">Categoría</a>
+  <a href="presentation.html">Presentación</a>
+  <a href="links.html">Enlaces De Interés</a>
+  </div>
+  <div class="footer-branding">
+  <img alt="Logotipo de Carballo" class="footer-logo" src="imaxes/logotipo_carballo.svg">
+  <p>© Antonio Manuel Campos Gerpe</p>
+  <img alt="Logotipo de Carballo" class="footer-logo" src="imaxes/logotipo_carballo.svg">
+  </img></img></div>
   </footer>
-  <script>
+  </body>
+  </html>
+<footer class="site-footer">
+<div class="footer-links">
+<a href="index.html">Portada</a>
+<a href="category.html">Categoría</a>
+<a href="presentation.html">Presentación</a>
+<a href="links.html">Enlaces De Interés</a>
+</div>
+<div class="footer-branding">
+<img alt="Logotipo de Carballo" class="footer-logo" loading="lazy" src="imaxes/logotipo_carballo.svg">
+<p>© Antonio Manuel Campos Gerpe</p>
+<img alt="Logotipo de Carballo" class="footer-logo" loading="lazy" src="imaxes/logotipo_carballo.svg">
+</img></img></div>
+</footer>
+<script>
     // Selecciona todas las tarjetas
     document.querySelectorAll('.card').forEach(card => {
       card.addEventListener('click', function () {
@@ -149,7 +140,7 @@
       });
     });
   </script>
-  <script>
+<script>
     // Obtener el nombre del archivo actual
     const currentUrl = window.location.pathname.split('/').pop() || 'category.html';
 
@@ -163,7 +154,7 @@
       }
     });
   </script>
-  <script>
+<script>
     window.addEventListener("DOMContentLoaded", () => {
       // Seleccionar las imágenes de la barra de navegación
       const navImages = document.querySelectorAll("nav img");
@@ -180,7 +171,5 @@
       });
     });
   </script>
-
 </body>
-
 </html>
