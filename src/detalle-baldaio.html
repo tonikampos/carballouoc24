@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
 
+    <!-- Precarga de la imagen principal (LCP) -->
+    <link rel="preload" as="image" href="imaxes/razo_anoitecer.webp" type="image/webp">
+
     <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="./styles/main.scss">
 </head>
@@ -17,19 +20,19 @@
 <body>
     <header
     style="display: flex; align-items: center; justify-content: center; padding: 1rem; background-color: #f8f9fa; border-bottom: 1px solid #dee2e6;">
-    <img loading="lazy" alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
+    <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
       style="width: 50px; height: auto; margin-right: 1rem;" />
       <div style="text-align: center;">
         <h1 style="margin: 0; font-size: 1.5rem; color: #8ee61c;">COSTA DA MORTE</h1>
         <h3 style="margin: 0; font-size: 1rem; color: #1ce6a3;">Playa Razo - Baldaio</h3>
       </div>
-     <img loading="lazy" alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
+     <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg"
       style="width: 50px; height: auto; margin-right: 1rem;" />
   </header>
     <nav
         style="position: relative; display: flex; align-items: center; justify-content: space-between; padding: 0 1rem;">
         <!-- Imagen izquierda -->
-        <img loading="lazy" alt="Clip art izquierdo" src="imaxes/san_xoan_3.jpg" style="
+        <img alt="Clip art izquierdo" src="imaxes/san_xoan_3.jpg" style="
               clip-path: ellipse(50% 50% at 50% 50%);
               width: 80px;
               height: 80px;
@@ -46,7 +49,7 @@
             <li><a href="./links.html">Enlaces de interés</a></li>
         </ul>
         <!-- Imagen derecha -->
-        <img loading="lazy" alt="Clip art derecho" src="imaxes/anllons_3.jpg" style="
+        <img alt="Clip art derecho" src="imaxes/anllons_3.jpg" style="
               clip-path: ellipse(50% 50% at 50% 50%);
               width: 80px;
               height: 80px;
@@ -57,21 +60,24 @@
           " />
     </nav>
 
-    </section>
     <section class="descripcion-playa">
         <h2>Razo - Baldaio, el paraíso existe y estás en el</h2>
         <p class="descripcion-texto">La <strong>playa de Razo</strong> es una de las playas más importantes de Galicia.
             El paraíso de los Surferos. Amplios espacios de aparcamiento, concurrida en verano pero con espacio más que
             suficiente.</p>
-        <p class="descripcion-texto">No te olvides de los chiringuitos a pié de playa y por suspuesto, cuenta con todos
+        <p class="descripcion-texto">No te olvides de los chiringuitos a pié de playa y por supuesto, cuenta con todos
             los servicios
-            y es desde hace muchos años, badera Azul.</p>
+            y es desde hace muchos años, bandera Azul.</p>
     </section>
     <!-- Galería de imágenes con tarjetas -->
     <section class="galeria-imagenes">
         <div class="card-container">
             <div class="card principal">
-                <img loading="lazy" src="imaxes/razo_anoitecer.jpg" alt="Amanecer en Razo-Baldaio">
+                <picture>
+                  <source srcset="imaxes/razo_anoitecer.webp" type="image/webp">
+                  <source srcset="imaxes/razo_anoitecer.avif" type="image/avif">
+                  <img src="imaxes/razo_anoitecer.jpg" alt="Amanecer en Razo-Baldaio">
+                </picture>
                 <div class="card-description">
                     <h3>Amanecer en Razo-Baldaio</h3>
                     <p>Un espectacular amanecer en una de las playas más bonitas de Galicia.</p>
@@ -137,9 +143,9 @@
 
         </div>
         <div class="footer-branding">
-            <img loading="lazy" alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
+            <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
             <p>© Antonio Manuel Campos Gerpe</p>
-            <img loading="lazy" alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
+            <img alt="Logotipo de Carballo" src="imaxes/logotipo_carballo.svg" class="footer-logo" />
 
         </div>
     </footer>
@@ -151,6 +157,7 @@
           // Asignar la clase de movimiento inicial según su posición
           if (navImages[0]) navImages[0].classList.add("izquierda");
           if (navImages[1]) navImages[1].classList.add("derecha");
+    
     
           // Activar las animaciones con un pequeño retraso
           navImages.forEach((img, index) => {
