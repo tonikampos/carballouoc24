@@ -61,10 +61,12 @@
   <h2 class="center-text">Turismo en Carballo. ¡Qué ver y hacer!</h2>
   <div class="card-container">
   <div class="card">
-  <img alt="Playa de Razo-Baldaio" sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" src="imaxes/anoitecer_na_costa.jpg" srcset="
-                imaxes/anoitecer_na_costa_1x.jpg 1x, 
-                imaxes/anoitecer_na_costa_2x.jpg 2x, 
-                imaxes/anoitecer_na_costa_3x.jpg 3x"/>
+    <picture>
+      <source srcset="imaxes/anoitecer_na_costa_1x.avif 1x, imaxes/anoitecer_na_costa_2x.avif 2x, imaxes/anoitecer_na_costa_3x.avif 3x" type="image/avif">
+      <source srcset="imaxes/anoitecer_na_costa_1x.webp 1x, imaxes/anoitecer_na_costa_2x.webp 2x, imaxes/anoitecer_na_costa_3x.webp 3x" type="image/webp">
+      <img alt="Playa de Razo-Baldaio" sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+           src="imaxes/anoitecer_na_costa_1x.jpg" loading="lazy" importance="high">
+    </picture>
   <h3><a href="./detalle-baldaio.html">Nuestro MAR</a></h3>
   <p>Disfruta de nuestras espectaculares playas, como la de Razo, una de las más grandes y naturales de Galicia,
               un espacio ideal para el surf y la observación de aves.</p>
