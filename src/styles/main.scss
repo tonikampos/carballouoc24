@@ -9,10 +9,20 @@ body {
 }
 
 header {
-  background: url('../imaxes/anoitecer_na_costa.jpg') no-repeat center center/cover;
+  background: url('../imaxes/anoitecer_na_costa.avif') no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 50px 20px;
+
+  /* Fallback para navegadores que no soportan AVIF */
+  @supports not (background: url('../imaxes/anoitecer_na_costa.avif')) {
+    background: url('../imaxes/anoitecer_na_costa.webp') no-repeat center center/cover;
+  }
+
+  /* Fallback final para navegadores que no soportan WebP */
+  @supports not (background: url('../imaxes/anoitecer_na_costa.webp')) {
+    background: url('../imaxes/anoitecer_na_costa.jpg') no-repeat center center/cover;
+  }
 
   h1 {
     font-family: 'Lora', serif;
@@ -28,6 +38,7 @@ header {
     }
   }
 }
+
 
 nav {
   /* Fondo degradado azul celeste muy claro */
